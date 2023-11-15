@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-11-15T03:22:58.004Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 OPR/104.0.0.0" etag="g7PYnUrdkn5vGl96Qi6g" version="22.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-15T22:14:31.991Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="1dDdVgIOvHMP46_yTOLS" version="22.1.2" type="github">
   <diagram name="Page-1" id="4Nmrqq99getpGdNmEQTD">
-    <mxGraphModel dx="736" dy="300" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1386" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -66,7 +66,7 @@
         <mxCell id="gcwGfJkuUC6MB9jS_db6-21" value="+ getYear() : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="gcwGfJkuUC6MB9jS_db6-1" vertex="1">
           <mxGeometry y="504" width="240" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="gcwGfJkuUC6MB9jS_db6-22" value="+ equals(obj : Object) : ???????" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="gcwGfJkuUC6MB9jS_db6-1" vertex="1">
+        <mxCell id="gcwGfJkuUC6MB9jS_db6-22" value="+ equals(obj : Object) : boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="gcwGfJkuUC6MB9jS_db6-1" vertex="1">
           <mxGeometry y="530" width="240" height="26" as="geometry" />
         </mxCell>
         <mxCell id="gcwGfJkuUC6MB9jS_db6-23" value="+ toString() : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="gcwGfJkuUC6MB9jS_db6-1" vertex="1">
@@ -126,7 +126,7 @@
         <mxCell id="gcwGfJkuUC6MB9jS_db6-43" value="+ setEmail(email : String) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="gcwGfJkuUC6MB9jS_db6-34" vertex="1">
           <mxGeometry y="240" width="210" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="Ovh8EuE5VG66TlMuj3An-4" value="+ getStudentId(): String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="gcwGfJkuUC6MB9jS_db6-34">
+        <mxCell id="Ovh8EuE5VG66TlMuj3An-4" value="+ getStudentId(): String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="gcwGfJkuUC6MB9jS_db6-34" vertex="1">
           <mxGeometry y="266" width="210" height="26" as="geometry" />
         </mxCell>
         <mxCell id="gcwGfJkuUC6MB9jS_db6-44" value="+ getStudentName() : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="gcwGfJkuUC6MB9jS_db6-34" vertex="1">
@@ -144,7 +144,7 @@
         <mxCell id="gcwGfJkuUC6MB9jS_db6-48" value="+ isZipCodeValid(): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="gcwGfJkuUC6MB9jS_db6-34" vertex="1">
           <mxGeometry y="396" width="210" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="gcwGfJkuUC6MB9jS_db6-49" value="+ equals(obj : Object) : ?????&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="gcwGfJkuUC6MB9jS_db6-34" vertex="1">
+        <mxCell id="gcwGfJkuUC6MB9jS_db6-49" value="+ equals(obj : Object) : boolean&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="gcwGfJkuUC6MB9jS_db6-34" vertex="1">
           <mxGeometry y="422" width="210" height="32" as="geometry" />
         </mxCell>
         <mxCell id="gcwGfJkuUC6MB9jS_db6-50" value="+ toString() : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="gcwGfJkuUC6MB9jS_db6-34" vertex="1">
