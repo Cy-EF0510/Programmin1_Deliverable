@@ -4,26 +4,24 @@
  */
 package deliverable;
 
-import static java.lang.Character.toUpperCase;
-
 /**
  *
  * @author Cyril
  */
-public class StudentGradeBook {
+public class StudentGradeRecord {
     private double[] grades;
     private Student student;
     
-    public StudentGradeBook(){
+    public StudentGradeRecord(){
         
     }
 
-    public StudentGradeBook(double[] grades, Student student) {
+    public StudentGradeRecord(double[] grades, Student student) {
         this.grades = grades;
         this.student = student;
     }
     
-    public StudentGradeBook(StudentGradeBook gradeBook){ //im not sure about what i did here
+    public StudentGradeRecord(StudentGradeBook gradeBook){ //im not sure about what i did here
         grades = gradeBook.grades;
         student = gradeBook.student;
     }
@@ -56,8 +54,20 @@ public class StudentGradeBook {
         return 1;
     }
     
-    public char computeLetterGrades(double fin){ //Pretty easy to code
-        return toUpperCase('a');
+    public static char computeLetterGrades(double fin){ //Pretty easy to code || Im not sure the fin variable is used for
+        char letterGrade = 'O';
+        double grade = 0;
+        if(grade >= 90)
+            letterGrade = 'A';
+        else if(grade >= 80)
+            letterGrade = 'B';
+        else if(grade >= 70)
+            letterGrade = 'C';
+        else if(grade >= 60)
+            letterGrade = 'D';
+        else
+            letterGrade = 'F';
+        return letterGrade;
     }
     
     public boolean equals(Object obj){
