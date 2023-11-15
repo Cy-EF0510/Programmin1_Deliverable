@@ -2,7 +2,7 @@
 
 This is the project that I must complete for my first in compter science technology
 
-*PLEASE CHECK MASTER TO SEE PROGRAM*
+*PLEASE CHECK THE MASTER BRANCH TO SEE PROGRAM*
 
 You have just started work for the Vanier College Teachers Association (VTCA) and have been
 asked to write a program to assist teachers with:
