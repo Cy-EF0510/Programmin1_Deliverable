@@ -14,7 +14,8 @@ public class Deliverable {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        Course course = new Course("Cyril Efren Fabro", 6243515, 001, 1, 1);
+        System.out.println(course);
     }
     
 }

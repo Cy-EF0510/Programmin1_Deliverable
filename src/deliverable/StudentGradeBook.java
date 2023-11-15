@@ -1,0 +1,70 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package deliverable;
+
+import static java.lang.Character.toUpperCase;
+
+/**
+ *
+ * @author Cyril
+ */
+public class StudentGradeBook {
+    private double[] grades;
+    private Student student;
+    
+    public StudentGradeBook(){
+        
+    }
+
+    public StudentGradeBook(double[] grades, Student student) {
+        this.grades = grades;
+        this.student = student;
+    }
+    
+    public StudentGradeBook(StudentGradeBook gradeBook){ //im not sure about what i did here
+        grades = gradeBook.grades;
+        student = gradeBook.student;
+    }
+    
+    public double compteFinalGrade(double[] assessmentWeights){
+        return 1;
+    }
+
+    public void setGrades(double[] grades) {
+        this.grades = grades;
+    }
+
+    public void setAllGrade(double[] allGrades){
+        this.allGrades = allGrades; // I have no idea if this correct but i know this is incorrect
+    }
+    
+    public void setStudent(Student student) {
+        this.student = student;
+    }
+
+    public double[] getGrades() {
+        return grades;
+    }
+
+    public Student getStudent() {
+        return student;
+    }
+    
+    public int getNumberOfAssessments(){
+        return 1;
+    }
+    
+    public char computeLetterGrades(double fin){ //Pretty easy to code
+        return toUpperCase('a');
+    }
+    
+    public boolean equals(Object obj){
+        return true;
+    }
+    
+    public String toString(){
+        return "";
+    }
+}
