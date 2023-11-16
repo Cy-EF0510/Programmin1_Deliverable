@@ -56,14 +56,13 @@ public class StudentGradeRecord {
     
     public static char computeLetterGrades(double fin){ //Pretty easy to code || Im not sure the fin variable is used for
         char letterGrade = 'O';
-        double grade = 0;
-        if(grade >= 90)
+        if(fin >= 90)
             letterGrade = 'A';
-        else if(grade >= 80)
+        else if(fin >= 80)
             letterGrade = 'B';
-        else if(grade >= 70)
+        else if(fin >= 70)
             letterGrade = 'C';
-        else if(grade >= 60)
+        else if(fin >= 60)
             letterGrade = 'D';
         else
             letterGrade = 'F';
