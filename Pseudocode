@@ -1,9 +1,11 @@
 Pseudocode of the method
 addPrerequisiteCourse ???????
   assign i to the length of the array 
+
 generateStudentId()?????????????????????????
   assign initial value of studentId to 30000001
   increment studentId by 1
+
 isEmailValid()
   for the length of the email
     if email contains "@" and "."
@@ -22,7 +24,7 @@ isZipCodeValid() //this assumes that the zipcode is from Canada
           return true
   else return false
 
-computeFinalGrade(assessmentWeights: double[] )
+computeFinalGrade(assessmentWeights: double[] )??????????????????????????????????
 
 computeLetterGrades(fin : double ) 
   if fin >= 90
@@ -65,11 +67,28 @@ findArrayAverage(numbers : double[])
   return average
 
 findArrayStandardDev(numbers double[]) 
+  set sum and standardDeviation to 0
+  set value of length to length of the array
+  for the length of numbers
+    add num to the sum
+  assign mean to expression sem/length
+  for the length of the array
+    set value of standardDeviation to standardDeviation + (num - mean) to the power (2)
+  return the square root of standardDeviation/length
+    
 findMaxAssessment(k : int )
+
 findMinAssessment(k : int ) 
+
 findAvgAssessment(k : int )
+
 findStdevAssessment(k : int )
+
 toStringMaxAssessments() 
+
 toStringMinAssessments() 
+
 toStringAvgAssessments() 
+
 toStringStdevAssessments()
+
