@@ -1,4 +1,4 @@
-# Programming1_Deliverable
+# Programming1_Deliverable PLEASE READ THIS FIRST
 
 This is the project that I must complete for my first in compter science technology
 
