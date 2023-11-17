@@ -2,9 +2,10 @@ Pseudocode of the method
 addPrerequisiteCourse ???????
   assign i to the length of the array 
 
-generateStudentId()?????????????????????????
+generateStudentId()
   assign initial value of studentId to 30000001
-  increment studentId by 1
+  for each student added to the array
+    increment studentId by 1
 
 isEmailValid()
   for the length of the email
@@ -77,18 +78,25 @@ findArrayStandardDev(numbers double[])
   return the square root of standardDeviation/length
     
 findMaxAssessment(k : int )
+  Return the max grade of each assignment
 
 findMinAssessment(k : int ) 
+  Return the max grade of each assignment
 
 findAvgAssessment(k : int )
+  Return the average grade of each assignment
 
 findStdevAssessment(k : int )
+  Return the standard deviation grade of each assignment
 
 toStringMaxAssessments() 
+  print the max grade of each assignment
 
 toStringMinAssessments() 
+  print the max grade of each assignment
 
 toStringAvgAssessments() 
+  print the average grade of each assignment
 
 toStringStdevAssessments()
-
+  print the standard deviation grade of each assignment
