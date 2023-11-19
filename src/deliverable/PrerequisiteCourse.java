@@ -17,12 +17,12 @@ public class PrerequisiteCourse {
         this.numOfPrerequisite = numOfPrerequisite;
     }
     
-    public String addPrerequisiteCOurse(){
-        return "";
+    public void addPrerequisiteCOurse(){
+        
     }
     
     public String getPrerequisiteCoure(){
-        return "";
+        return ;
     }
     
     public String toString(){

@@ -33,7 +33,11 @@ public class Course {
     }
 
     public Course(String n, int num, int sect, int sem, int y) {
-
+        name = n;
+        number = num;
+        section = sect;
+        semester = sem;
+        year = y;
     }
 
     public static void setName(String name) {
