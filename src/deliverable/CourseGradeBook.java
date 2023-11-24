@@ -13,7 +13,7 @@ public class CourseGradeBook {
     private String[] caNames;
     private double[] caWights;
     private Course course;
-    private StudentGradesRecord[] gradeList;
+    private StudentGradeRecord[] gradeList;
     private int gradesRecord;
 
     public CourseGradeBook(Course course) {
@@ -103,8 +103,10 @@ public class CourseGradeBook {
         return 1;
     }
 
-    public String toStringMaxAssessment() {
-        return "";
+    public String toStringMaxAssessment(double[] numbers) {
+        for(int i = 0; i < numbers.length; i++)
+            
+        return String.format("Max:\t%.0f", );
     }
 
     public String toStringMinAssessment() {

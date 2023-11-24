@@ -21,13 +21,24 @@ public class StudentGradeRecord {
         this.student = student;
     }
     
-    public StudentGradeRecord(StudentGradeBook gradeBook){ //im not sure about what i did here
+    public StudentGradeRecord(StudentGradeRecord gradeBook){ //im not sure about what i did here
         grades = gradeBook.grades;
         student = gradeBook.student;
     }
     
     public double compteFinalGrade(double[] assessmentWeights){
-        return 1;
+        double finalGrade;
+        double productSum = 0;
+        double assSum = 0;
+        for(int i = 0; i < grades.length; i++){
+            double product  = grades[i] * assessmentWeights[i];
+            productSum += product;
+        }
+        for(int j = 0; j < assessmentWeights.length; j++){
+            assSum += assessmentWeights[j];
+        }
+        finalGrade = productSum / assSum;
+        return finalGrade;
     }
 
     public void setGrades(double[] grades) {
@@ -42,8 +53,9 @@ public class StudentGradeRecord {
         this.student = student;
     }
 
-    public double[] getGrades() {
-        return grades;
+    public double[] getGrades(int k) {
+        
+        return k;
     }
 
     public Student getStudent() {
@@ -55,7 +67,7 @@ public class StudentGradeRecord {
     }
     
     public static char computeLetterGrades(double fin){ //Pretty easy to code || Im not sure the fin variable is used for
-        char letterGrade = 'O';
+        char letterGrade;
         if(fin >= 90)
             letterGrade = 'A';
         else if(fin >= 80)
@@ -69,8 +81,16 @@ public class StudentGradeRecord {
         return letterGrade;
     }
     
-    public boolean equals(Object obj){
-        return true;
+    public boolean equals(Object obj) { // not sure about the return type 
+        if (obj == this){
+            return true;
+        }
+        if(obj != this){
+            return false;
+        }
+        else{
+            return false;
+        }
     }
     
     public String toString(){

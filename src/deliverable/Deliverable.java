@@ -14,8 +14,12 @@ public class Deliverable {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Course course = new Course("Cyril Efren Fabro", 6243515, 001, 1, 1);
+        Course course = new Course("Programming 1", "420-101-VA", "0001 & 0002", "Fall", 2023);
+        Student s1 = new Student("Cyril Efren Fabro", "efrencyril@gmail.com", "H3S 1H2"); 
+        Student s2 = new Student("Cyril Efren Fabro", "efrencyril@gmail.com", "H3S 1H2"); 
         System.out.println(course);
+        System.out.println(s1);
+        System.out.println(s2);
     }
     
 }

@@ -9,20 +9,27 @@ package deliverable;
  * @author Cyril
  */
 public class Student {
-
-    private int studentId;
+    private int studentId = 30000001;
     private String studentName;
     private String email;
     private String zip_code;
 
     public Student() {
-
+        this.studentId = generateStudentId();
+    }
+    
+    public Student(Student object2){
+        this.studentId = object2.studentId;
+        this.studentName = object2.studentName;
+        this.email = object2.email;
+        this.zip_code = object2.zip_code;
     }
 
-    public Student(int studentId, String studentName, String emaill) {
+    public Student(String studentName, String email, String zip_code) {
         this.studentId = studentId;
         this.studentName = studentName;
         this.email = email;
+        this.zip_code = zip_code;
     }
 
     public void setStudentId(int studentId) {
@@ -58,7 +65,8 @@ public class Student {
     }
 
     public int generateStudentId() {
-        return 1;
+        studentId++;
+        return studentId;
     }
 
     public boolean isEmailValid() {
@@ -66,7 +74,7 @@ public class Student {
         if(email.contains("@") && email.contains(".")){
             if(email.indexOf("@") < email.indexOf(".")){
                 if(email.indexOf("@") != email.charAt(0)){
-                    if(email.indexOf(".") != email.charAt(email.length())){
+                    if(email.indexOf(".") != email.charAt(email.length()-1)){
                         result = true;
                     }
                 }
@@ -94,11 +102,22 @@ public class Student {
         return result;
     }
 
-    public boolean equals(Object obj) { //Im not sure about the return type;
-        return true;
+    public boolean equals(Object obj) { // not sure about the return type 
+        if (obj == this){
+            return true;
+        }
+        if(obj != this){
+            return false;
+        }
+        else{
+            return false;
+        }
     }
 
     public String toString() {
-        return "";
+        return "StudentID: " + studentId +
+                ", StudentName: " + studentName +
+                ", Email: " + email +
+                ", ZipCode: " + zip_code;
     }
 }

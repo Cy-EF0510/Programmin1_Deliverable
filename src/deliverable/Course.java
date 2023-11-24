@@ -10,11 +10,11 @@ package deliverable;
  */
 public class Course {
 
-    private static String name;
-    private static int number;
-    private static int section;
-    private static int semester;
-    private static int year;
+    private String name;
+    private String number;
+    private String section;
+    private String semester;
+    private int year;
 
     public Course() {
         this.name = name;
@@ -24,15 +24,15 @@ public class Course {
         this.year = year;
     }
 
-    public Course(Course xxxxxx) {
-        this.name = xxxxxx.name;
-        this.number = xxxxxx.number;
-        this.section = xxxxxx.section;
-        this.semester = xxxxxx.semester;
-        this.year = xxxxxx.year;
+    public Course(Course object2) {
+        this.name = object2.name;
+        this.number = object2.number;
+        this.section = object2.section;
+        this.semester = object2.semester;
+        this.year = object2.year;
     }
 
-    public Course(String n, int num, int sect, int sem, int y) {
+    public Course(String n, String num, String sect, String sem, int y) {
         name = n;
         number = num;
         section = sect;
@@ -40,54 +40,74 @@ public class Course {
         year = y;
     }
 
-    public static void setName(String name) {
-        Course.name = name;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public static void setNumber(int number) {
-        Course.number = number;
+    public void setNumber(String number) {
+        this.number = number;
     }
 
-    public static void setSection(int section) {
-        Course.section = section;
+    public void setSection(String section) {
+        this.section = section;
     }
 
-    public static void setSemester(int semester) {
-        Course.semester = semester;
+    public void setSemester(String semester) {
+        this.semester = semester;
     }
 
-    public static void setYear(int year) {
-        Course.year = year;
+    public void setYear(int year) {
+        this.year = year;
     }
 
-    public static String getName() {
+    public String getName() {
         return name;
     }
 
-    public static int getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public static int getSection() {
+    public String getSection() {
         return section;
     }
 
-    public static int getSemester() {
+    public String getSemester() {
         return semester;
     }
 
-    public static int getYear() {
+    public int getYear() {
         return year;
     }
 
+
     public boolean equals(Object obj) { // not sure about the return type 
-        boolean status = true;
-        return status;
+        if (obj == this){
+            return true;
+        }
+        if(obj != this){
+            return false;
+        }
+        else{
+            return false;
+        }
     }
 
     @Override
     public String toString() {
-        return "Course{" + '}';
+        return String.format("Course Information" + 
+                "\n--------------------" + 
+                "\nTitle%14s%s" +
+                "\nNumber%13s%s" +
+                "\nSection%12s%s" +
+                "\nSemester%11s%s" +
+                "\nYear%15s%s" +
+                "\nPrerequisite"+
+                "\nStudent Grade Table"+
+                "\n--------------------------------------------------------------------------------------------------------------" +
+                "\nID Number\tStudent Name\tA1\tA2\tA3\tA4\tA5\tA6\tA7\tA8\tfin\tgrd" +
+                "\n--------------------------------------------------------------------------------------------------------------"
+                , ":" , name, ":",number, ":",section, ":",semester, ":",year );
     }
 
 }
