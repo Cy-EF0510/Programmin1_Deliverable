@@ -8,35 +8,34 @@ package deliverable;
  *
  * @author Cyril
  */
-public class PrerequisiteCourse extends Course{
+public class PrerequisiteCourse extends Course {
+
     private Course[] prerequisites;
     private int numOfPrerequisites;
-    private int maxPrerequisites;
+    private final int maxPrerequisites;
 
-    public PrerequisiteCourse(Course[] prerequisites, int numOfPrerequisites, int maxPrerequisites) {
-        super(name, number, secion, semester, year);
+    public PrerequisiteCourse(Course[] prerequisites, int numOfPrerequisites, int maxPrerequisites, String name, String number, String section, String semester, int year) {
+        super(name, number, section, semester, year);
         this.prerequisites = new Course[maxPrerequisites];
         this.numOfPrerequisites = 0;
         this.maxPrerequisites = maxPrerequisites;
-        
+
     }
-    
-    public void addPrerequisiteCOurse(){
-        if(numOfPrerequisites > maxPrerequisites){
+
+    public void addPrerequisiteCOurse() {
+        if (numOfPrerequisites > maxPrerequisites) {
             System.out.println("The list is full");
-        }
-        else {
-            prerequisites[numOfPrerequisites] = course;
-            numOfPrerequisites++;
+        } else {
+            numOfPrerequisites++;//?????????????????//
         }
     }
-    
-    public Course[] getPrerequisiteCoure(){
-        
-        return courseCopy.copyOf(prerequisites, numOfPrerequisites);;
+
+    public Course[] getPrerequisiteCoure(Course[] arrayCopy) {
+        arrayCopy = prerequisites;
+        return arrayCopy;
     }
-    
-    public String toString(){
+
+    public String toString() {
         return "";
     }
 }

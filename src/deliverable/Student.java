@@ -9,16 +9,18 @@ package deliverable;
  * @author Cyril
  */
 public class Student {
-    private int studentId = 30000001;
+
+    int studentId = 30000001;//????????????????????????
     private String studentName;
     private String email;
     private String zip_code;
+    static int newStudentId;
 
     public Student() {
         this.studentId = generateStudentId();
     }
-    
-    public Student(Student object2){
+
+    public Student(Student object2) {
         this.studentId = object2.studentId;
         this.studentName = object2.studentName;
         this.email = object2.email;
@@ -65,23 +67,24 @@ public class Student {
     }
 
     public int generateStudentId() {
-        studentId++;
+        studentId = newStudentId;
+        newStudentId++;
         return studentId;
     }
 
     public boolean isEmailValid() {
         boolean result = false;
-        if(email.contains("@") && email.contains(".")){
-            if(email.indexOf("@") < email.indexOf(".")){
-                if(email.indexOf("@") != email.charAt(0)){
-                    if(email.indexOf(".") != email.charAt(email.length()-1)){
+        if (email.contains("@") && email.contains(".")) {
+            if (email.indexOf("@") < email.indexOf(".")) {
+                if (email.indexOf("@") != email.charAt(0)) {
+                    if (email.indexOf(".") != email.charAt(email.length() - 1)) {
                         result = true;
                     }
                 }
             }
-        }
-        else 
+        } else {
             result = false;
+        }
         return result;
     }
 
@@ -103,21 +106,20 @@ public class Student {
     }
 
     public boolean equals(Object obj) { // not sure about the return type 
-        if (obj == this){
+        if (obj == this) {
             return true;
         }
-        if(obj != this){
+        if (obj != this) {
             return false;
-        }
-        else{
+        } else {
             return false;
         }
     }
 
     public String toString() {
-        return "StudentID: " + studentId +
-                ", StudentName: " + studentName +
-                ", Email: " + email +
-                ", ZipCode: " + zip_code;
+        return "StudentID: " + studentId
+                + ", StudentName: " + studentName
+                + ", Email: " + email
+                + ", ZipCode: " + zip_code;
     }
 }

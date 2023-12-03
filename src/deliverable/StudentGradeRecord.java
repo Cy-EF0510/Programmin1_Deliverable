@@ -13,7 +13,7 @@ public class StudentGradeRecord {
     private Student student;
     
     public StudentGradeRecord(){
-        
+
     }
 
     public StudentGradeRecord(double[] grades, Student student) {
@@ -21,13 +21,13 @@ public class StudentGradeRecord {
         this.student = student;
     }
     
-    public StudentGradeRecord(StudentGradeRecord gradeBook){ //im not sure about what i did here
-        grades = gradeBook.grades;
-        student = gradeBook.student;
+    public StudentGradeRecord(StudentGradeRecord copyGradeBook){ //im not sure about what i did here
+        this.grades = copyGradeBook.grades;
+        this.student = copyGradeBook.student;
     }
     
-    public double compteFinalGrade(double[] assessmentWeights){
-        double finalGrade;
+    public double computeFinalGrade(double[] assessmentWeights){
+        double fin;
         double productSum = 0;
         double assSum = 0;
         for(int i = 0; i < grades.length; i++){
@@ -37,8 +37,8 @@ public class StudentGradeRecord {
         for(int j = 0; j < assessmentWeights.length; j++){
             assSum += assessmentWeights[j];
         }
-        finalGrade = productSum / assSum;
-        return finalGrade;
+        fin = productSum / assSum;
+        return fin;
     }
 
     public void setGrades(double[] grades) {
@@ -47,23 +47,28 @@ public class StudentGradeRecord {
 
     public void setAllGrade(double[] allGrades){
         this.allGrades = allGrades; // I have no idea if this correct but i know this is incorrect
+if(allGrades.length !=)
     }
     
     public void setStudent(Student student) {
         this.student = student;
     }
 
-    public double[] getGrades(int k) {
-        
-        return k;
+    public double[] getGrade(int k) {??????????????????????????????
+        return ;
+    }
+    
+    public double[] getAllGrade(){
+        double[] copyGradeList;
+        return copyGradeList.copyOf(grades, grades.length);  // I have no idea if this correct but i know this is incorrect
     }
 
     public Student getStudent() {
         return student;
     }
     
-    public int getNumberOfAssessments(){
-        return 1;
+    public int getNumberOfAssessments(double[] assessmentWeights){
+        return assessmentWeights.length;
     }
     
     public static char computeLetterGrades(double fin){ //Pretty easy to code || Im not sure the fin variable is used for

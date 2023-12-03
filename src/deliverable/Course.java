@@ -17,11 +17,11 @@ public class Course {
     private int year;
 
     public Course() {
-        this.name = name;
-        this.number = number;
-        this.section = section;
-        this.semester = semester;
-        this.year = year;
+        this.name = "John Doe";
+        this.number = "0000000";
+        this.section = "0000";
+        this.semester = "Null";
+        this.year = 2023;
     }
 
     public Course(Course object2) {
@@ -80,34 +80,32 @@ public class Course {
         return year;
     }
 
-
     public boolean equals(Object obj) { // not sure about the return type 
-        if (obj == this){
+        if (obj == this) {
             return true;
         }
-        if(obj != this){
+        if (obj != this) {
             return false;
-        }
-        else{
+        } else {
             return false;
         }
     }
 
     @Override
     public String toString() {
-        return String.format("Course Information" + 
-                "\n--------------------" + 
-                "\nTitle%14s%s" +
-                "\nNumber%13s%s" +
-                "\nSection%12s%s" +
-                "\nSemester%11s%s" +
-                "\nYear%15s%s" +
-                "\nPrerequisite"+
-                "\nStudent Grade Table"+
-                "\n--------------------------------------------------------------------------------------------------------------" +
-                "\nID Number\tStudent Name\tA1\tA2\tA3\tA4\tA5\tA6\tA7\tA8\tfin\tgrd" +
-                "\n--------------------------------------------------------------------------------------------------------------"
-                , ":" , name, ":",number, ":",section, ":",semester, ":",year );
+        return String.format("Course Information"
+                + "\n--------------------"
+                + "\nTitle%14s%s"
+                + "\nNumber%13s%s"
+                + "\nSection%12s%s"
+                + "\nSemester%11s%s"
+                + "\nYear%15s%s"
+                + "\nPrerequisite"
+                + "\nStudent Grade Table"
+                + "\n--------------------------------------------------------------------------------------------------------------"
+                + "\nID Number\tStudent Name\tA1\tA2\tA3\tA4\tA5\tA6\tA7\tA8\tfin\tgrd"
+                + "\n--------------------------------------------------------------------------------------------------------------",
+                 ":", name, ":", number, ":", section, ":", semester, ":", year);
     }
 
 }

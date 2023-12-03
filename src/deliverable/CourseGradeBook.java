@@ -85,7 +85,7 @@ public class CourseGradeBook {
 
     public double[] getAssessmentArray(int k) {
         return 1;
-    }
+    }   
 
     public double findMaxAssessment(int k) {
         return 1;
